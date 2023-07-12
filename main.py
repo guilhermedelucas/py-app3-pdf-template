@@ -5,7 +5,7 @@ pdf = FPDF(orientation='P', unit="mm", format="A4")
 pdf.set_auto_page_break(auto=False, margin=0)
 
 df = pd.read_csv('files/topics.csv')
-print(pd)
+
 for index, row in df.iterrows():
     number_of_pages = int(row['Pages'])
     for _ in range(number_of_pages):
